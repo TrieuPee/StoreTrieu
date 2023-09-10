@@ -1,0 +1,41 @@
+choices = ["Milk", "Soda", "Water"]
+choices = input("Milk, Soda, or Water? Which one would you like? ")
+print("\033[1mEnter numbers only!\033[0m")
+if choices == "Milk":
+    money = input("Milk costs $3, how much money do you have? ")
+    change = int(money) - 3.00
+    need = 3.00 - int(money)
+    if int(money) < 3.00:
+        print("Sorry you do not have enough money. You will need")
+        print("$",need)
+    if int(money) == 3.00:
+        print("Thank you for shopping with us!")
+    if int(money) > 3.00:
+        print("Here's your change!")
+        print("$",change)
+
+if choices == "Soda":
+    money = input("Soda costs $4, how much money do you have? ")
+    change = int(money) - 4.00
+    need = 4.00 - int(money)
+    if int(money) < 4.00:
+        print("Sorry you do not have enough money. You will need")
+        print("$",need)
+    if int(money) == 4.00:
+        print("Thank you for shopping with us!")
+    if int(money) > 4.00:
+        print("Here's your change!")
+        print("$",change)
+
+if choices == "Water":
+        money = input("Water costs $2, how much money do you have? ")
+        change = int(money) - 2.00
+        need = 2.00 - int(money)
+        if int(money) < 2.00:
+            print("Sorry you do not have enough money. You will need")
+            print("$",need)
+        if int(money) == 2.00:
+            print("Thank you for shopping with us!")
+        if int(money) > 2.00:
+            print("Here's your change!")
+            print("$",change)
